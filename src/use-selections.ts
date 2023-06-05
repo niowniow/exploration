@@ -157,7 +157,7 @@ const createProps = trieMemoize(
           if (selectionsSet.head === null) {
             selectionsSet.head = nodeId;
           }
-        } else if (event.metaKey) {
+        } else if (event.ctrlKey) {
           if (selectionsSet.has(nodeId)) {
             selectionsSet.delete(nodeId);
           } else {
